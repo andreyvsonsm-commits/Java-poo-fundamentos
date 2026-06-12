@@ -1,0 +1,32 @@
+
+abstract class Transporte {
+
+    abstract void mover();
+}
+
+class Carro extends Transporte {
+
+    @Override
+    void mover() {
+        System.out.println("Carro se move pela estrada.");
+    }
+}
+
+class Moto extends Transporte {
+
+    @Override
+    void mover() {
+        System.out.println("Moto se move rapidamente.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Transporte t1 = new Carro();
+        Transporte t2 = new Moto();
+
+        t1.mover();
+        t2.mover();
+    }
+}
