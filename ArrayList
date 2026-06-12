@@ -1,0 +1,33 @@
+import java.util.ArrayList;
+
+class Pessoa {
+
+    private String nome;
+    private int idade;
+
+    Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    void falar() {
+        System.out.println(nome + " - " + idade + " anos");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        ArrayList<Pessoa> pessoas = new ArrayList<>();
+
+        pessoas.add(new Pessoa("Rafa", 11));
+        pessoas.add(new Pessoa("Magnus", 33));
+        pessoas.add(new Pessoa("Johan", 17));
+
+        for (Pessoa p : pessoas) {
+            p.falar();
+        }
+
+        System.out.println("Total: " + pessoas.size());
+    }
+}
