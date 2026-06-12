@@ -1,0 +1,28 @@
+
+class Veiculo {
+
+    String marca;
+
+    void ligar() {
+        System.out.println(marca + " ligou.");
+    }
+}
+
+class Carro extends Veiculo {
+
+    void acelerar() {
+        System.out.println(marca + " faz vrum vrum.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Carro carro = new Carro();
+
+        carro.marca = "Ferrari";
+
+        carro.ligar();
+        carro.acelerar();
+    }
+}
