@@ -1,14 +1,21 @@
 class Pessoa {
+
     String nome;
     int idade;
 
     void falar() {
-        System.out.println(
-            "Olá meu nome é "
-            + nome
-            + " e tenho "
-            + idade
-            + " anos"
-        );
+        System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Pessoa p1 = new Pessoa();
+
+        p1.nome = "Andreyvson";
+        p1.idade = 19;
+
+        p1.falar();
     }
 }
