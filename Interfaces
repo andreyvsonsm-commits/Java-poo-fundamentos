@@ -1,0 +1,32 @@
+
+interface Voador {
+
+    void voar();
+}
+
+class Passaro implements Voador {
+
+    @Override
+    public void voar() {
+        System.out.println("Voo livre.");
+    }
+}
+
+class Aviao implements Voador {
+
+    @Override
+    public void voar() {
+        System.out.println("Voo rápido.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Voador v1 = new Passaro();
+        Voador v2 = new Aviao();
+
+        v1.voar();
+        v2.voar();
+    }
+}
