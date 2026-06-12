@@ -1,0 +1,23 @@
+class Pessoa {
+
+    String nome;
+    int idade;
+
+    Pessoa(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    void falar() {
+        System.out.println("Olá, meu nome é " + nome + " e tenho " + idade + " anos.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+
+        Pessoa p1 = new Pessoa("Andreyvson", 19);
+
+        p1.falar();
+    }
+}
